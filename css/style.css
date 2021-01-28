@@ -4,10 +4,118 @@
   box-sizing: border-box;
 }
 
+.body {
+  font-family: "Rubik", sans-serif;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.container {
+  background: #6699cc;
+  height: 100vh;
+  background: linear-gradient(145deg, #6da4da, #5c8ab8);
+  box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.67);
+}
+
+.logo {
+  width: 500px;
+  margin: 0 auto;
+}
+
 .logo img {
   width: 100%;
+  margin: 20px 0;
+}
+
+.container-add-todo {
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.container-add-todo input {
+  width: 80%;
+  height: 60px;
+  padding: 10px 30px;
+  border-radius: 16px;
+  border: 0px;
+  background: #6699cc;
+  box-shadow: inset 10px 10px 20px #5782ad, inset -10px -10px 20px #75b0eb;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.container-add-todo input::placeholder {
+  color: #264d73;
+}
+
+.check {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  border-radius: 5px;
+  background: #6699cc;
+  box-shadow: 10px 10px 20px #5782ad, -10px -10px 20px #75b0eb;
+  float: right;
+  cursor: pointer;
+}
+
+.check:active {
+  box-shadow: inset 10px 10px 20px #5782ad, inset -10px -10px 20px #75b0eb;
+}
+
+.check i {
+  margin: auto;
+  font-size: 35px;
+}
+
+.container-add-todo input:focus {
+  outline: none;
+}
+
+.container-todo {
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 16px;
+  background: #6699cc;
+  box-shadow: inset 10px 10px 20px #5782ad, inset -10px -10px 20px #75b0eb;
+  padding: 30px 30px;
 }
 
 .todo-element {
+  padding: 10px 0;
+  border-bottom: 1px solid #5b89b7;
+}
+
+.todo-element p {
+  margin: 0;
+  float: left;
+  line-height: 50px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.delete {
   display: flex;
+  float: right;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 16px;
+  background: #6699cc;
+  box-shadow: 10px 10px 20px #5782ad, -10px -10px 20px #75b0eb;
+  cursor: pointer;
+}
+
+.delete:active {
+  box-shadow: inset 10px 10px 20px #5782ad, inset -10px -10px 20px #75b0eb;
+}
+
+.delete i {
+  margin: auto;
 }

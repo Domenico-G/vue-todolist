@@ -13,7 +13,6 @@ var app = new Vue({
       const newList = this.list.filter((el, i) => {
         return i !== index;
       });
-      console.log(newList);
       this.list = newList;
     },
   },
