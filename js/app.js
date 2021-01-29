@@ -10,10 +10,8 @@ var app = new Vue({
       this.elementList = "";
     },
     delItemList: function (index) {
-      const newList = this.list.filter((el, i) => {
-        return i !== index;
-      });
-      this.list = newList;
+      this.list = this.list.filter((el, i) =>  i !== index );
+      
     },
   },
 });
